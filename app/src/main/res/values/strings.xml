@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Encrypt</string>
+
+    <string name="sampe_text">Sample Text</string>
+    <string name="label_encrypt">Encrypt</string>
+
 </resources>

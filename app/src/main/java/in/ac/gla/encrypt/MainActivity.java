@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
                         {
                             input += 26;
                         }
-                        etOutput.setText(output.concat(Character.toString(input)));
+                        output = output.concat(Character.toString(input));
                     }
                     else if (input >= 'A' && input <= 'Z')
                     {
@@ -58,6 +58,19 @@ public class MainActivity extends AppCompatActivity
                         if (input < 'A')
                         {
                             input += 26;
+                        }
+                        etOutput.setText(output.concat(Character.toString(input)));
+                    }
+                    else if (input >= '0' && input <= '9')
+                    {
+                        input += (key % 10);
+                        if (input > '9')
+                        {
+                            input -= 10;
+                        }
+                        if (input < '0')
+                        {
+                            input += 10;
                         }
                         etOutput.setText(output.concat(Character.toString(input)));
                     }

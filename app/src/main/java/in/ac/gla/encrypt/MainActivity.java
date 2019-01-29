@@ -46,8 +46,20 @@ public class MainActivity extends AppCompatActivity
                         {
                             input += 26;
                         }
-                        output = output.concat(Character.toString(input));
-                        etOutput.setText(output);
+                        etOutput.setText(output.concat(Character.toString(input)));
+                    }
+                    else if (input >= 'A' && input <= 'Z')
+                    {
+                        input += key;
+                        if (input > 'Z')
+                        {
+                            input -= 26;
+                        }
+                        if (input < 'A')
+                        {
+                            input += 26;
+                        }
+                        etOutput.setText(output.concat(Character.toString(input)));
                     }
                 }
             }

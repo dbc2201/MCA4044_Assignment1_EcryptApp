@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity
             {
                 String output = "";
                 char key = 13;
-                String message = etInput.getText().toString().trim();
+                String message = etInput.getText().toString();
                 for (int i = 0; i < message.length(); i++)
                 {
                     char input = message.charAt(i);

@@ -3,5 +3,9 @@
 
     <string name="sampe_text">Sample Text</string>
     <string name="label_encrypt">Encrypt</string>
+    <string name="app_label">Secret Messages App</string>
+    <string name="et_label">enter your text here</string>
+    <string name="label_output">output</string>
+    <string name="label_decrypt">decrypt</string>
 
 </resources>

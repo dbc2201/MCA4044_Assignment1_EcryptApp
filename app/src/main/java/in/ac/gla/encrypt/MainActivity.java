@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
                         {
                             input += 26;
                         }
-                        etOutput.setText(output.concat(Character.toString(input)));
+                        output = output.concat(Character.toString(input));
                     }
                     else if (input >= '0' && input <= '9')
                     {
@@ -72,9 +72,10 @@ public class MainActivity extends AppCompatActivity
                         {
                             input += 10;
                         }
-                        etOutput.setText(output.concat(Character.toString(input)));
+                        output = output.concat(Character.toString(input));
                     }
                 }
+                etOutput.setText(output);
             }
         });
     }
